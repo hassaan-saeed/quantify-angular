@@ -1,0 +1,10 @@
+.overlay {
+    background: rgb(143, 143, 143);
+    padding: 5%;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    flex: 1;
+  }

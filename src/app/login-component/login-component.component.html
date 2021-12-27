@@ -1,0 +1,27 @@
+<div class="overlay">
+    <mat-card>
+        <mat-card-content align="center">
+            
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Enter Email">
+                    <mat-hint>example@abc.com</mat-hint>
+                </mat-form-field> 
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+            </p>
+            <p>
+                <button mat-raised-button color="primary">Login</button>
+            </p>
+            
+        </mat-card-content>
+    </mat-card>
+</div>
